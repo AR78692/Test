@@ -1,4 +1,7 @@
-print('Enter your name in small latter:')
-name=str(input())
-name1=name.capitalize()
-print(name1)
+from test import *
+#this function for adding two value and output there result!
+print('Enter your Numbers for Calculate!')
+Add()
+Sub()
+Mul()
+Div()
