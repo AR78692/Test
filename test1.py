@@ -1,7 +1,7 @@
 print('Programming-------------(6)')
 import re
-number='123 hi this is a no 482'
-pattern=r'[4-6]+'
+number='123 Hi This Is A No 482'
+pattern=r'[i-s]+' #i,j,k,l,m,n,o,p,q,r,s
 result=re.search(pattern,number)
 if result:
     print('Search():',result.group())
