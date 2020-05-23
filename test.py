@@ -1,13 +1,16 @@
-class Ataur:
-    def __init__(self):
-        self.Name='Ataur Rahaman'
-        self.C_Year='Last Year'
-        self.Roll=10
-        self.marks=450
-        self.Category='Pass'
-    def talks(self):
-        print('Your name is:',self.Name)
-        print(self.Name,'You are in:',self.C_Year)
-        print('Dear Student Your Roll No:',self.Roll)
-        print('Wow! Your Result is WellDone! You Are:',self.Category)
-results=Ataur()
+#-------------------------------------------
+import re
+str='HellO world 7856'
+pattern=r"[o]+"
+a=re.search(pattern,str)
+if a:
+    print('Search():',a.group())
+else:
+    print('Not Match')
+a=re.match(pattern,str)
+if a:
+    print('Match:',a.group())
+else:
+    print('Not Match')
+a=re.findall(pattern,str)
+print('Findall:',a)

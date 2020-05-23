@@ -1,8 +1,16 @@
+#-------------------------------------
 import re
-string='Hello 123 Hello'
-result=re.match(r"(\w+)\ (\d+)\ (\w+)",string)
-print('Group():',result.group())
-print('Group(0):',result.group(0))
-print('Group(1):',result.group(1))
-print('Group(2):',result.group(2))
-print('Group(3):',result.group(3))
+str='Hello World World 2335'
+pattern=r'[W]+'
+result=re.search(pattern,str)
+if result:
+    print('Search!',result.group())
+else:
+    print('No Match!')
+result=re.match(pattern,str)
+if result:
+    print('Match():',result.group())
+else:
+    print('No Match!')
+result=re.findall(pattern,str)
+print(result)
