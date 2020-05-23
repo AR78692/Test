@@ -1,16 +1,17 @@
-#-------------------------------------------
+print('Programme -------(4) in re modouls')
 import re
-str='HellO world 7856'
-pattern=r"[o]+"
-a=re.search(pattern,str)
-if a:
-    print('Search():',a.group())
+print('Enter some world for find something in this sentence!')
+str=input()
+pattern=r'[^o]+'
+result=re.search(pattern,str)
+if result:
+    print('Search is():',result.group())
 else:
-    print('Not Match')
-a=re.match(pattern,str)
-if a:
-    print('Match:',a.group())
+    print('Not Match!')
+result=re.match(pattern,str)
+if result:
+    print('Search is():',result.group())
 else:
-    print('Not Match')
-a=re.findall(pattern,str)
-print('Findall:',a)
+    print('Not Match!')
+result=re.findall(pattern,str)
+print('Findall is():',result)
