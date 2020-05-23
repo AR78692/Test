@@ -1,16 +1,16 @@
-#-------------------------------------
+print('Programming-------------(3)')
 import re
-str='Hello World World 2335'
-pattern=r'[W]+'
-result=re.search(pattern,str)
+str='HellO World 4556 welcome'
+pattern=r'[o]+'
+result=re.search(pattern,str,re.I)
 if result:
-    print('Search!',result.group())
+    print('Search():',result.group())
 else:
-    print('No Match!')
-result=re.match(pattern,str)
+    print('Not Match!():')
+result=re.match(pattern,str,re.I)
 if result:
     print('Match():',result.group())
 else:
-    print('No Match!')
-result=re.findall(pattern,str)
-print(result)
+    print('Not Match!():')
+result=re.findall(pattern,str,re.I)
+print('Findall():',result)
